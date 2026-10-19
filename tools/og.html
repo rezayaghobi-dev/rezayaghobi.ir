@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Open Graph card</title>
+<style>
+  @font-face {
+    font-family: "Bricolage Grotesque";
+    src: url("../assets/fonts/bricolage-grotesque-latin-wght-normal.woff2") format("woff2");
+    font-weight: 200 800;
+    font-display: block;
+  }
+  @font-face {
+    font-family: "Instrument Sans";
+    src: url("../assets/fonts/instrument-sans-latin-wght-normal.woff2") format("woff2");
+    font-weight: 400 700;
+    font-display: block;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; width: 1200px; height: 630px; }
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 64px 72px 56px;
+    background: #0a0d14;
+    color: #eef2f8;
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    overflow: hidden;
+  }
+  .top { display: flex; align-items: center; gap: 14px; color: #6fe3b0; font: 500 19px/1 ui-monospace, Menlo, monospace; letter-spacing: .16em; text-transform: uppercase; }
+  .top::before { content: ""; width: 40px; height: 2px; background: #6fe3b0; }
+  h1 { margin: 0; font-family: "Bricolage Grotesque", sans-serif; font-weight: 650; font-size: 126px; line-height: .9; letter-spacing: -.04em; }
+  .bottom { display: flex; align-items: flex-end; justify-content: space-between; border-top: 1px solid #232b3a; padding-top: 26px; }
+  .stack { max-width: 760px; color: #9aa7bc; font-size: 25px; line-height: 1.45; }
+  .domain { color: #6fe3b0; font: 400 22px/1 ui-monospace, Menlo, monospace; }
+</style>
+</head>
+<body>
+  <div class="top">Junior DevOps engineer</div>
+  <h1>Reza<br>Yaghobi</h1>
+  <div class="bottom">
+    <p class="stack">Docker · Kubernetes · GitLab CI/CD · Ansible · Prometheus · Grafana</p>
+    <span class="domain">rezayaghobi.ir</span>
+  </div>
+</body>
+</html>
